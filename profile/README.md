@@ -1,4 +1,21 @@
-## Hi there 👋
+## 2025 SVSU Capstone
+
+Welcome to organization for managing the 2025 SVSU Capstone project. The project is called PLOT and is being used as a way to layout floor plans and allocate shelf spacing for our client who is a retail store.
+
+### Overview
+...
+
+#### Frontend
+...
+
+#### Backend
+...
+
+#### Database
+...
+
+### Links
+...
 
 <!--
 
