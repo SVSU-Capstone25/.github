@@ -19,6 +19,23 @@ Welcome to organization for managing the 2025 SVSU Capstone project. The project
 
 ---
 
+### 🎟️ Ticket Workflow
+
+```mermaid
+sequenceDiagram
+    Draft->>Todo: Requirements & ticket<br/>have been fully filled out.
+    Todo->>Development: Assigned by Dev Lead.
+    Development->>Quality & Assurance: Assign TO QA Lead.
+    Quality & Assurance->>Documentation: Assign TO Doc Lead.
+    Documentation->>Done: Review by seperate Doc member & QA or Dev Lead.<br/>Once reviewed then merge into main.
+
+    Development->>Todo: Workload of a Dev is too much so they<br/>assign the ticket back to<br/>Dev Lead for another Dev to pickup.
+    Quality & Assurance->>Development: QA found issue and assigns it<br/>back to original Dev & Dev Lead<br/>with comment explaining why.
+    Documentation->>Quality & Assurance: Documentation finds unfufilled<br/>requirements and/or testing<br/>errors and assigns it back to<br/>original QA & QA Lead with<br/>comment explaining why.
+    Documentation-->>Draft: Requirement wasn't in initial ticket<br/>so another ticket is made and put into "Draft".<br/>Initial ticket is moved on if original<br/>reqiorements were fufilled.
+```
+> Solid arrows mean that a ticket is moved from one state to another. Dotted arrow signifies that an action happens but that the ticket itself didn't move to that state.
+
 ### 🔍 Overview
 ...
 
