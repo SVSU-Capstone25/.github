@@ -128,8 +128,41 @@ This isn’t the only way to switch/checkout branches. If you click the three do
 #### Backend
 ...
 
+---
+
 #### Database
 ...
+
+---
+
+#### Workflows
+
+##### QA
+
+Once Development has finished their work, the ticket should be moved to the "QA" column on the project board and will not be assigned to anyone initially. The QA lead will then dish out the tickets based on the load of each QA member. Once a QA member gets a ticket they will then switch to the branch via the "Source Control" on the left bar in VSCode and make sure all their branches are synced/up-to-date. The QA member will then check to make sure the requirements were fufilled and then write the proper tests, based on what repository it's in. Requirements are considered not fufilled if the feature provided by dev is missing key functionality and design. If this is the case, QA will leave issues on the pull request via the "Files Changed" tab.
+![image](https://github.com/user-attachments/assets/6a5230a1-cb3b-4c3e-a10a-2b9c8f784d22)
+
+You can leave comments on specific lines of code by clicking and dragging the blue plus button and then leaving a comment in the comment box that appears:
+![image](https://github.com/user-attachments/assets/be65d57a-60c6-4514-a4ab-104e7d8b7807)
+
+When leaving a comment make sure to @ the original dev and leave a thorough comment on what needs to be changed and why. If the dev feels like it doesn't need to be changed and they present a good argument via replying to the issue then the QA memeber can resolve the issue.
+
+Once you leave all your comments on the pull request make sure to click the "Review Changes" button and select the "Request Changes" radio button. If the request you're making cannot be tied to a specific line of code you can always leave the full request change in the comment box within the "Review Changes" pop-up box.
+![image](https://github.com/user-attachments/assets/213ba249-a4b5-434b-ae96-37ea6b75f867)
+
+Once you click "Submit Review", you should then assign the pull request to the original dev within the "Asignees" section, and also yourself if you're not already assigned. Once they're assigned, you can navigate back to the original ticket for the feature through the link in the "Development" section.
+![image](https://github.com/user-attachments/assets/8be63455-3371-4f4e-af92-89ca16484c2b)
+
+Once you're back in the ticket, you should unassign yourself and reassign the original dev via the "Assignees" section, there should only ever be one person assigned to a ticket to make sure we know who's hands it is in now. You also need to change the status via the "Projects" section back to "Development".
+![image](https://github.com/user-attachments/assets/f128bc70-8c06-4368-bf0a-9ad424b6a51a)
+
+Finally, make sure to grab a link to the **pull request** that your issues are commented on and @ the dev member in the Discord to give them a heads up that the ball is in their court.
+
+When the ticket comes back to you after the issues have been resolved, make sure to go through the pull request and press the "Resolve Issue" button **if** the issue has been resolved properly. If it hasn't then reach out to the dev and ask why it wasn't fufilled and if anything the pull request and ticket might need to be moved back to them. If everything is resolved though, go into your VSCode and make sure to sync and pull the most up-to-date version of the branch via the "Source Control" on the left bar in VSCode. You can then go ahead and write your tests if you haven't written any yet or write extra ones if changes have been made and extra ones are needed.
+
+If things become more complicated via some string of events you can always reach out to the QA lead for help.
+
+---
 
 ### Links
 ...
